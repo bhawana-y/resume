@@ -1,0 +1,148 @@
+{
+	"$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+	"basics": {
+		"name": "Bhawana Yadav",
+		"label": "Senior Quality Assurance Engineer",
+		"email": "bhawanabhushan1810@gmail.com",
+		"phone": "+61485665337",
+		"summary": "",
+		"location": {
+			"city": "Newcastle",
+			"region": "New South Wales",
+			"countryCode": "AU"
+		},
+		"profiles": [
+			{
+				"network": "LinkedIn",
+				"username": "bhawana-yadav",
+				"url": "https://www.linkedin.com/in/bhawana-yadav/"
+			}
+		]
+	},
+	"work": [
+		{
+			"name": "Red5 (Infrared5)",
+			"company": "Red5 (Infrared5)",
+			"position": "Senior Quality Assurance Engineer",
+			"startDate": "2024-09-01",
+			"highlights": [
+				"Migrated test-case suite from BDD docs to Zephyr, enabling team to run 2-3x more test cases in the same time",
+				"Increased test coverage to 95% across core features via Zephyr, reducing support ticket volume by approx. 30%",
+				"Automated smoke test workflows with Playwright, replacing a manual pre-release verification process across every build",
+				"Tested API and SDK endpoints using Postman and curl, validating request/response payloads and edge cases",
+				"Defined and wrote test cases for new features collaborating with developers, reducing post-release defects",
+				"Validated real-time playback systems under real-world conditions like network throttling and cross-browser support"
+			],
+			"summary": "Real-time live video streaming infrastructure provider",
+			"url": "https://www.red5.net",
+			"location": "Jamaica, New York, United States (Remote)"
+		},
+		{
+			"name": "payever GmbH",
+			"company": "payever GmbH",
+			"position": "Quality Assurance Engineer",
+			"startDate": "2023-07-01",
+			"endDate": "2024-06-01",
+			"highlights": [
+				"Increased integration test coverage by 15% for the playwright based web suite, integrated into Gitlab CI/CD to gate deployments",
+				"Upgraded the test framework, bringing end-to-end suite execution down to under 5 minutes in CI/CD environment",
+				"Enabled suite to use SQL database for dynamic selectors and site configurations, removing hard-coded values from codebase",
+				"Integrated Jira into the test suite to auto-skip test cases with an open ticket, skipping unnecessary CI runs"
+			],
+			"summary": "Embedded commerce and payments platform for merchants and financial institutions",
+			"url": "https://payever.de/",
+			"location": "Germany (Remote)"
+		},
+		{
+			"name": "Samsung Research Institute (via Qualitest)",
+			"company": "Samsung Research Institute (via Qualitest)",
+			"position": "Quality Assurance Engineer",
+			"startDate": "2019-04-01",
+			"endDate": "2023-03-01",
+			"highlights": [
+				"Performed functional, regression, and end-to-end testing for Settings modules, including display, sound, connectivity, and accessibility features.",
+				"Executed test cases on Samsung devices of different hardware configurations and Android build versions 9 through 11",
+				"Identified and tracked defects in Settings and One UI components, working with developers towards resolution"
+			],
+			"url": "https://research.samsung.com/sri-n",
+			"location": "Noida, Uttar Pradesh, India"
+		},
+		{
+			"name": "Oppo Mobiles",
+			"company": "Oppo Mobiles",
+			"position": "Quality Analyst",
+			"startDate": "2016-11-01",
+			"endDate": "2019-04-01",
+			"highlights": [
+				"Tested UI/UX consistency and usability across multiple Oppo smartphones, covering pre-release builds, in-house apps, and compatibility with popular Play Store applications",
+				"Performed functional, regression, performance, and compatibility testing for mobile applications and Color OS features",
+				"Participated in requirements, design, and test case review sessions with cross-functional teams, including an on-site session at Oppo's China headquarterse"
+			],
+			"url": "https://research.samsung.com/sri-n",
+			"location": "Noida, Uttar Pradesh, India"
+		}
+	],
+	"volunteer": [],
+	"education": [],
+	"awards": [],
+	"certificates": [],
+	"publications": [],
+	"skills": [
+		{
+			"name": "Testing Types",
+			"keywords": [
+				"Functional",
+				"Integration",
+				"Regression",
+				"API",
+				"Performance",
+				"End-to-End"
+			]
+		},
+		{
+			"name": "Platforms & Tools",
+			"keywords": [
+				"Android",
+				"Mobile Apps",
+				"Web Applications",
+				"Desktop Applications",
+				"APIs",
+				"Firmware"
+			]
+		},
+		{
+			"name": "Test Automation",
+			"keywords": [
+				"Playwright",
+				"JavaScript",
+				"Jest",
+				"RTS (custom automation tool)"
+			]
+		},
+		{
+			"name": "Bug Tracking",
+			"keywords": [
+				"Jira",
+				"ServiceNow",
+				"IBM RTC Jazz",
+				"PLM",
+				"GitLab CI/CD",
+				"Waterfall",
+				"V-Model"
+			]
+		},
+		{
+			"name": "Test cases & Reporting",
+			"keywords": [
+				"Zephyr",
+				"Test case design",
+				"Test plan creation"
+			]
+		}
+	],
+	"projects": [],
+	"meta": {
+		"version": "v1.0.0",
+		"canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json"
+	}
+}

@@ -1,0 +1,48 @@
+name: Build & Deploy Resume
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - resume.json
+      - readme.md
+      - .github/workflows/deploy-resume.yml
+
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main branch
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build index.html and resume.pdf from resume.json
+        env:
+          CHROME_ARGS: --no-sandbox --disable-setuid-sandbox
+        run: |
+          mkdir -p dist
+          npx resume export dist/index.html --resume resume.json --theme stackoverflow
+          # npx resume export dist/resume.pdf --resume resume.json --theme stackoverflow
+          cp readme.md dist/readme.md
+
+      - name: Deploy HTML to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: dist
+          publish_branch: gh-pages
+          force_orphan: true
